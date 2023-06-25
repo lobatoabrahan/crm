@@ -6,7 +6,7 @@ import Ordenes from "./Ordenes";
 import Contacto from "./Contacto";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <Router>
       <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
