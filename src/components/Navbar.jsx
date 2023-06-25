@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Spin as Hamburger } from "hamburger-react";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <div>
         <nav>
-          <button className="absolute top-4 right-4 inline-flex items-center peer justify-center rounded-md p-2 text-gray-800 hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white group">
-            JEEEE
-          </button>
-          <div className="p-6 w-1/2 h-screen bg-white z-20 fixed top-0 -left-[1000px] lg:left-0 lg:w-60  peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
+          <div className={`lg:flex-row-reverse lg:justify-end justify-between w-full bg-blue-500 flex items-center p-2 px-4 duration-300 ${isOpen ? "lg:pl-60" : "lg:pl-20"}`}>
+            <div className="ml-7">Abrahans</div>
+            <Hamburger toggled={isOpen} toggle={setIsOpen} size={20}/>
+          </div>
+          <div
+            className={`p-6 w-1/2 h-screen bg-white z-20 fixed border-r border-[#e5eaef] top-0 lg:left-0 lg:w-60 ease-out delay-150 duration-300 ${
+              isOpen ? "left-0" : "lg:w-20 -left-[600px]"
+            }`}
+          >
+            {" "}
             <div className="flex flex-col justify-start item-center">
               <Link to={"/"}>
                 <h1 className="text-base text-center cursor-pointer font-bold text-blue-900 border-b border-gray-100 pb-4 w-full">
