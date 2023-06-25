@@ -1,14 +1,14 @@
 import React from "react";
 
-function Acerca() {
+function Ordenes(isOpen, setIsOpen) {
   return (
-    <div className="w-full lg:pl-60">
+    <div className={`w-full ${isOpen ? "lg:pl-60" : "lg:pl-20"}`}>
       <h1>
-        Acerca de nosotros
+        Ordenes de nosotros
         asldfalsdjflaskdjflkasjdlfjasldkfjlaskdjflksadjflasdjflaksdjflasdjflkasdfjlkasdjflkasdjflkasdjf
       </h1>
     </div>
   );
 }
 
-export default Acerca;
+export default Ordenes;

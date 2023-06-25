@@ -2,7 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Inicio from './Inicio';
-import Acerca from './Acerca';
+import Ordenes from './Ordenes';
 import Contacto from './Contacto';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/acerca" element={<Acerca/>}/>
+        <Route path="/ordenes" element={<Ordenes/>}/>
         <Route path="/contacto" element={<Contacto/>}/>
         <Route path="/" element={<Inicio/>}/>
       </Routes>
