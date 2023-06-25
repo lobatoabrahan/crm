@@ -18,8 +18,8 @@ function Navbar(props) {
             <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} rounded />
           </div>
           <div
-            className={`px-4 py-1 w-1/2 h-screen bg-white z-20 fixed border-r border-[#e5eaef] top-0 lg:left-0 lg:w-60 ease-out delay-150 duration-300 ${
-              isOpen ? "left-0" : "lg:w-20 -left-[600px]"
+            className={`px-4 py-1 max-lg:w-1/2 h-screen bg-white z-20 fixed border-r border-[#e5eaef] top-0 lg:left-0 ease-out delay-150 duration-300 ${
+              isOpen ? "left-0 " : " lg:w-20 -left-[600px]"
             }`}
           >
             {" "}
