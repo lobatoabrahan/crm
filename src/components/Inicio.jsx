@@ -1,9 +1,10 @@
 import React from "react";
 
-function Inicio() {
+function Inicio(props) {
+  const { isOpen, setIsOpen } = props;
   return (
     <>
-      <div className="w-full lg:pl-60">
+      <div className={`w-full  ${isOpen ? "lg:pl-60" : "pl-20"}`}>
         <h1>Página de inicio</h1>
         <div>jJAJAJA</div>
       </div>

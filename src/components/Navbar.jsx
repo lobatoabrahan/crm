@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Spin as Hamburger } from "hamburger-react";
 
-function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+function Navbar(props) {
+  const {isOpen, setIsOpen} = props
 
   return (
     <>

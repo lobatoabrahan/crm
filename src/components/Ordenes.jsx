@@ -1,8 +1,9 @@
 import React from "react";
 
-function Ordenes(isOpen, setIsOpen) {
+function Ordenes(props) {
+  const { isOpen, setIsOpen } = props;
   return (
-    <div className={`w-full ${isOpen ? "lg:pl-60" : "lg:pl-20"}`}>
+    <div className={`w-full  ${isOpen ? "lg:pl-60" : "pl-20"}`}>
       <h1>
         Ordenes de nosotros
         asldfalsdjflaskdjflkasjdlfjasldkfjlaskdjflksadjflasdjflaksdjflasdjflkasdfjlkasdjflkasdjflkasdjf
